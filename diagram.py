@@ -5,6 +5,6 @@ from diagrams.programming.language import Python
 from diagrams.onprem.compute import Server
 
 
-with Diagram("pic/ICPS ETL", show=False, outformat="svg"):
+with Diagram("pic/ICPS ETL", show=False):
     Server("ICPS") >> Server("ODS") >> Python() >> RDS("ods_dev")
 
